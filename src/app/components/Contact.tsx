@@ -17,7 +17,7 @@ export default function Contact() {
   ];
 
   return (
-    <AnimatedSection id="contact" className="mt-24 relative" animation="fade-up">
+    <AnimatedSection className="mt-24 relative" animation="fade-up">
       {/* Consistent background with other sections */}
       <div className="absolute inset-0 bg-white/30 dark:bg-gray-800/30 -z-10"></div>
       
@@ -31,12 +31,12 @@ export default function Contact() {
           <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-blue-600 dark:bg-blue-400 rounded-full"></div>
         </h2>
         <div className="flex justify-center space-x-8">
-          {socialLinks.map((link, index) => (
+          {socialLinks.map((link) => (
             <AnimatedSection
               key={link.name}
               animation="fade-up"
               className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white px-4 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-all duration-200"
-              style={{ transitionDelay: `${index * 100}ms` }}
+              //style={{ transitionDelay: `${index * 100}ms` }}
             >
               <a
                 href={link.url}

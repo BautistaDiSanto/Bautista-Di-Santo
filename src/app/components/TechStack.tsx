@@ -18,12 +18,12 @@ export default function TechStack() {
           <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-blue-600 dark:bg-blue-400 rounded-full"></div>
         </h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-          {technologies.map((tech, index) => (
+          {technologies.map((tech) => (
             <AnimatedSection 
               key={tech} 
               animation="fade-up"
               className="p-6 bg-white dark:bg-gray-800 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 text-center transform hover:-translate-y-1 transition-all duration-200 hover:shadow-xl"
-              style={{ transitionDelay: `${index * 100}ms` }}
+              //style={{ transitionDelay: `${index * 100}ms` }}
             >
               <span className="text-gray-900 dark:text-white font-medium">{tech}</span>
             </AnimatedSection>
