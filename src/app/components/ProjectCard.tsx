@@ -133,6 +133,8 @@ export default function ProjectCard({ title, description, demoLink, image }: Pro
           <a
             href={demoLink}
             className="text-blue-600 dark:text-blue-400 hover:underline font-medium"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             View Project →
           </a>
