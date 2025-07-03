@@ -1,6 +1,7 @@
 "use client";
 
 import AnimatedSection from './AnimatedSection';
+import TechCard from './TechCard';
 
 const techData = [
   { name: 'React', logo: '/logos/react.svg' },
@@ -42,22 +43,7 @@ export default function TechStack() {
           <div className="pointer-events-none absolute right-0 top-0 h-full w-32 z-10 bg-gradient-to-l from-gray-50 dark:from-gray-900 to-transparent" />
           <div className="flex gap-6 py-2 animate-tech-scroll w-max min-w-full">
             {logos.map((tech, index) => (
-              <div
-                key={tech.name + index}
-                className="flex-shrink-0 p-4 bg-white/10 dark:bg-white/10 rounded-xl shadow-xl text-center hover:-translate-y-1 transition-all duration-200 hover:shadow-2xl w-40 border border-white/30 backdrop-blur-2xl relative overflow-hidden"
-              >
-                {/* Glass gradient overlay */}
-                <div className="absolute inset-0 pointer-events-none rounded-xl" style={{background: 'linear-gradient(135deg, rgba(255,255,255,0.45) 0%, rgba(255,255,255,0.15) 100%)'}} />
-                <img
-                  src={tech.logo}
-                  alt={tech.name + ' logo'}
-                  className="mx-auto mb-3 h-20 w-20 object-contain"
-                  loading="lazy"
-                  width={80}
-                  height={80}
-                />
-                <span className="text-gray-900 dark:text-white font-medium block mt-2">{tech.name}</span>
-              </div>
+              <TechCard key={tech.name + index} name={tech.name} logo={tech.logo} />
             ))}
           </div>
         </div>
