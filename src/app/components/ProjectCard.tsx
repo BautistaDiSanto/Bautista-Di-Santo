@@ -136,7 +136,7 @@ export default function ProjectCard({ title, description, demoLink, image }: Pro
             target="_blank"
             rel="noopener noreferrer"
           >
-            View Project →
+            View →
           </a>
         </div>
       </div>
