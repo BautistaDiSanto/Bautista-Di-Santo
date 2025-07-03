@@ -4,15 +4,15 @@ export default function Contact() {
   const socialLinks = [
     {
       name: 'GitHub',
-      url: 'https://github.com',
+      url: 'https://github.com/BautistaDiSanto',
     },
     {
       name: 'LinkedIn',
-      url: 'https://linkedin.com',
+      url: 'https://www.linkedin.com/in/juanbautistadisanto/',
     },
     {
       name: 'Email',
-      url: 'mailto:your.email@example.com',
+      url: 'mailto:juanbautistadisanto@gmail.com',
     }
   ];
 
