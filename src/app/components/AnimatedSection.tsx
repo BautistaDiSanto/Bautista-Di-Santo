@@ -25,7 +25,7 @@ export default function AnimatedSection({
             // Remove the class first to reset the animation
             entry.target.classList.remove('animate-in');
             // Force a reflow
-            void entry.target.offsetWidth;
+            //void entry.target.offsetWidth;
             // Add the class back to trigger the animation
             entry.target.classList.add('animate-in');
           } else {
