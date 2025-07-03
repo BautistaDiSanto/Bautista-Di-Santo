@@ -38,9 +38,9 @@ export default function TechStack() {
         </h2>
         <div className="overflow-hidden w-full carousel-wrapper relative">
           {/* Left fade */}
-          <div className="pointer-events-none absolute left-0 top-0 h-full w-32 z-10 bg-gradient-to-r from-gray-50 dark:from-gray-900 to-transparent" />
+          <div className="pointer-events-none absolute left-0 top-0 h-full w-48 z-10 bg-gradient-to-r from-gray-50 dark:from-gray-900 via-gray-50/60 dark:via-gray-900/60 to-transparent" />
           {/* Right fade */}
-          <div className="pointer-events-none absolute right-0 top-0 h-full w-32 z-10 bg-gradient-to-l from-gray-50 dark:from-gray-900 to-transparent" />
+          <div className="pointer-events-none absolute right-0 top-0 h-full w-48 z-10 bg-gradient-to-l from-gray-50 dark:from-gray-900 via-gray-50/60 dark:via-gray-900/60 to-transparent" />
           <div className="flex gap-6 py-2 animate-tech-scroll w-max min-w-full">
             {logos.map((tech, index) => (
               <TechCard key={tech.name + index} name={tech.name} logo={tech.logo} />
