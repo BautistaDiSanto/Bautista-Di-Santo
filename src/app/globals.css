@@ -33,3 +33,23 @@ body {
 .animate-blink {
   animation: blink 1s step-end infinite;
 }
+
+/* Hide scrollbars for custom carousels */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@keyframes tech-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-66.6666%); }
+}
+.animate-tech-scroll {
+  animation: tech-scroll 60s linear infinite;
+}
+.carousel-wrapper:hover .animate-tech-scroll {
+  animation-play-state: paused;
+}
