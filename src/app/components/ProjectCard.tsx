@@ -64,7 +64,7 @@ export default function ProjectCard({ title, description, demoLink, image }: Pro
           <span
             key={i}
             className={
-              `inline-block transition-all duration-300 cursor-pointer hover:-translate-y-1 hover:text-blue-500 dark:hover:text-blue-400 will-change-transform` +
+              `inline-block transition-all duration-300 cursor-pointer will-change-transform` +
               (inView ? ' letter-pop-animate' : '')
             }
             style={
