@@ -5,7 +5,7 @@ export default function Projects() {
   const projects = [
     {
       id: 1,
-      title: "OutsideCube",
+      title: "Outside The Cube",
       description: "A software agency offering end-to-end development, cloud solutions, CI/CD, UX design, and agile squads for web and mobile projects.",
       demoLink: "https://outsidecube.com/",
       image: "https://outsidecube.com/assets/banner.f75c5946.webp"

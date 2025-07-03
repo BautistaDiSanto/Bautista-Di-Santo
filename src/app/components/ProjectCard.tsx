@@ -72,12 +72,17 @@ export default function ProjectCard({ title, description, demoLink, image }: Pro
         <img
           src={image}
           alt={title + ' preview'}
-          className="h-48 w-full object-cover object-center relative z-10"
+          className="h-48 w-full object-cover object-center relative z-10 transition-transform duration-300 group-hover:scale-110"
           loading="lazy"
         />
       )}
       <div className="p-6 relative z-10">
-        <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">{title}</h3>
+        <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2 relative overflow-visible">
+          <span className="inline-block transition-all duration-300 group-hover:tracking-wider">
+            {title}
+          </span>
+          <span className="absolute left-1/2 -translate-x-1/2 bottom-1 w-8 h-1 bg-gray-400 dark:bg-gray-200 rounded-full opacity-0 group-hover:opacity-80 transition-all duration-300 group-hover:bottom-[-2px]"></span>
+        </h3>
         <p className="text-gray-600 dark:text-gray-300 mb-4">{description}</p>
         <div className="flex gap-4 justify-center">
           <a
