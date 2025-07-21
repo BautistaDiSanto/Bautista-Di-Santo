@@ -22,10 +22,10 @@ export default function Navigation() {
 
   return (
     <div className="fixed top-0 left-0 right-0 z-50">
-      <nav className="w-full dark:bg-gray-900 border-b dark:border-gray-800">
+      <nav className="w-full bg-gray-900 border-b border-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16 items-center">
-            <div className="text-xl font-bold dark:text-white">Bautista Di Santo</div>
+            <div className="text-xl font-bold text-white">Bautista Di Santo</div>
             {/* Desktop Menu */}
             <div className="hidden md:flex items-center space-x-4 lg:space-x-6">
               {socialLinks.map((link) => (
@@ -34,7 +34,7 @@ export default function Navigation() {
                   href={link.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="dark:text-gray-300 dark:hover:text-white transition-colors whitespace-nowrap text-sm lg:text-base"
+                  className="text-gray-300 hover:text-white transition-colors whitespace-nowrap text-sm lg:text-base"
                 >
                   {link.name}
                 </a>
@@ -43,7 +43,7 @@ export default function Navigation() {
             {/* Mobile Menu Button */}
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="md:hidden p-2 rounded-md dark:text-gray-300 dark:hover:text-white focus:outline-none"
+              className="md:hidden p-2 rounded-md text-gray-300 hover:text-white focus:outline-none"
             >
               <svg
                 className="h-6 w-6"
@@ -66,7 +66,7 @@ export default function Navigation() {
           <div
             className={`${
               isMenuOpen ? 'block' : 'hidden'
-            } md:hidden dark:border-gray-800`}
+            } md:hidden border-gray-800`}
           >
             <div className="px-2 pt-2 pb-3 space-y-1">
               {socialLinks.map((link) => (
@@ -75,7 +75,7 @@ export default function Navigation() {
                   href={link.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block px-3 py-2 rounded-md text-base font-medium dark:text-gray-300 dark:hover:text-white dark:hover:bg-gray-800 truncate"
+                  className="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-800 truncate"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {link.name}

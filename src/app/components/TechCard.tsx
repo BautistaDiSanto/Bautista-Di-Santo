@@ -48,7 +48,7 @@ export default function TechCard({ name, logo }: TechCardProps) {
 
   return (
     <div
-      className="flex-shrink-0 p-4 dark:bg-white/10 rounded-xl shadow-md text-center hover:-translate-y-1 transition-all duration-200 hover:shadow-lg w-40 dark:border-white/10 backdrop-blur-2xl relative overflow-hidden group"
+      className="flex-shrink-0 p-4 bg-white/10 rounded-xl shadow-md text-center hover:-translate-y-1 transition-all duration-200 hover:shadow-lg w-40 border-white/10 backdrop-blur-2xl relative overflow-hidden group"
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
     >
@@ -77,7 +77,7 @@ export default function TechCard({ name, logo }: TechCardProps) {
         width={80}
         height={80}
       />
-      <span className="dark:text-white font-medium block mt-2 relative z-10">
+      <span className="text-white font-medium block mt-2 relative z-10">
         {name}
       </span>
     </div>
