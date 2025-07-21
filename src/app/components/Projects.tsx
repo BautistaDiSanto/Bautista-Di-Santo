@@ -15,10 +15,10 @@ export default function Projects() {
   return (
     <AnimatedSection className="mt-24 relative" animation="fade-up">
       {/* Subtle background */}
-      <div className="absolute inset-0 bg-white/30 dark:bg-gray-800/30 -z-10"></div>
+      <div className="absolute inset-0 dark:bg-gray-800/30 -z-10"></div>
       {/* Subtle decorative elements */}
-      <div className="absolute -top-10 left-0 w-32 h-32 bg-blue-100/30 dark:bg-blue-900/10 rounded-full blur-3xl"></div>
-      <div className="absolute -bottom-10 right-0 w-32 h-32 bg-purple-100/30 dark:bg-purple-900/10 rounded-full blur-3xl"></div>
+      <div className="absolute -top-10 left-0 w-32 h-32 dark:bg-blue-900/10 rounded-full blur-3xl"></div>
+      <div className="absolute -bottom-10 right-0 w-32 h-32 dark:bg-purple-900/10 rounded-full blur-3xl"></div>
       <div className="max-w-4xl mx-auto px-4">
         <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-12 text-center relative">
           Featured Work & Projects

@@ -94,7 +94,7 @@ export default function ProjectCard({ title, description, demoLink, image }: Pro
   return (
     <div
       ref={cardRef}
-      className="bg-white/20 dark:bg-white/10 rounded-xl shadow-md text-center hover:-translate-y-1 transition-all duration-200 hover:shadow-lg border border-white/20 dark:border-white/10 backdrop-blur-2xl relative overflow-hidden group"
+      className="dark:bg-white/10 rounded-xl shadow-md text-center hover:-translate-y-1 transition-all duration-200 hover:shadow-lg dark:border-white/10 backdrop-blur-2xl relative overflow-hidden group"
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
     >
@@ -124,15 +124,15 @@ export default function ProjectCard({ title, description, demoLink, image }: Pro
         />
       )}
       <div className="p-6 relative z-10">
-        <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2 relative overflow-visible">
+        <h3 className="text-xl font-bold dark:text-white mb-2 relative overflow-visible">
           {renderAnimatedTitle(title)}
-          <span className="absolute left-1/2 -translate-x-1/2 bottom-1 w-8 h-1 bg-gray-400 dark:bg-gray-200 rounded-full opacity-0 group-hover:opacity-80 transition-all duration-300 group-hover:bottom-[-2px]"></span>
+          <span className="absolute left-1/2 -translate-x-1/2 bottom-1 w-8 h-1 dark:bg-gray-200 rounded-full opacity-0 group-hover:opacity-80 transition-all duration-300 group-hover:bottom-[-2px]"></span>
         </h3>
-        <p className="text-gray-600 dark:text-gray-300 mb-4">{description}</p>
+        <p className="dark:text-gray-300 mb-4">{description}</p>
         <div className="flex gap-4 justify-center">
           <a
             href={demoLink}
-            className="text-blue-600 dark:text-blue-400 hover:underline font-medium"
+            className="dark:text-blue-400 hover:underline font-medium"
             target="_blank"
             rel="noopener noreferrer"
           >
