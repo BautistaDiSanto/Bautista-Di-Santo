@@ -19,7 +19,7 @@ export default function Contact() {
   return (
     <AnimatedSection className="mt-24 relative" animation="fade-up">
       {/* Consistent background with other sections */}
-      <div className="absolute inset-0 bg-gray-800/30 -z-10"></div>
+      <div className="absolute inset-0"></div>
       
       {/* Consistent decorative elements */}
       <div className="absolute -top-10 right-0 w-32 h-32 bg-blue-900/10 rounded-full blur-3xl"></div>

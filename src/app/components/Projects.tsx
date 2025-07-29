@@ -15,7 +15,7 @@ export default function Projects() {
   return (
     <AnimatedSection className="mt-24 relative" animation="fade-up">
       {/* Subtle background */}
-      <div className="absolute inset-0 bg-gray-800/30 -z-10"></div>
+      <div className="absolute inset-0"></div>
       {/* Subtle decorative elements */}
       <div className="absolute -top-10 left-0 w-32 h-32 bg-blue-900/10 rounded-full blur-3xl"></div>
       <div className="absolute -bottom-10 right-0 w-32 h-32 bg-purple-900/10 rounded-full blur-3xl"></div>
