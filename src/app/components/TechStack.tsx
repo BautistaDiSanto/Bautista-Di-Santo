@@ -27,18 +27,18 @@ export default function TechStack() {
       {/* Subtle background */}
       <div className="absolute inset-0 -z-10"></div>
       {/* Subtle decorative elements */}
-      <div className="absolute -top-10 right-0 w-32 h-32 bg-blue-100/30 dark:bg-blue-900/10 rounded-full blur-3xl"></div>
-      <div className="absolute -bottom-10 left-0 w-32 h-32 bg-purple-100/30 dark:bg-purple-900/10 rounded-full blur-3xl"></div>
+      <div className="absolute -top-10 right-0 w-32 h-32 bg-blue-900/10 rounded-full blur-3xl"></div>
+      <div className="absolute -bottom-10 left-0 w-32 h-32 bg-purple-900/10 rounded-full blur-3xl"></div>
       <div className="relative w-screen left-1/2 -translate-x-1/2">
-        <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-12 text-center relative w-full">
+        <h2 className="text-3xl font-bold text-white mb-12 text-center relative w-full">
           Tech Stack
-          <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-blue-600 dark:bg-blue-400 rounded-full"></div>
+          <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-blue-400 rounded-full"></div>
         </h2>
         <div className="overflow-hidden w-full carousel-wrapper relative">
           {/* Left fade */}
-          <div className="pointer-events-none absolute left-0 top-0 h-full w-48 z-10 bg-gradient-to-r from-gray-50 dark:from-gray-900 via-gray-50/60 dark:via-gray-900/60 to-transparent" />
+          <div className="pointer-events-none absolute left-0 top-0 h-full w-48 z-10 bg-gradient-to-r from-gray-900 via-gray-900/60 to-transparent" />
           {/* Right fade */}
-          <div className="pointer-events-none absolute right-0 top-0 h-full w-48 z-10 bg-gradient-to-l from-gray-50 dark:from-gray-900 via-gray-50/60 dark:via-gray-900/60 to-transparent" />
+          <div className="pointer-events-none absolute right-0 top-0 h-full w-48 z-10 bg-gradient-to-l from-gray-900 via-gray-900/60 to-transparent" />
           <div className="flex gap-6 py-2 animate-tech-scroll w-max min-w-full">
             {logos.map((tech, index) => (
               <TechCard key={tech.name + index} name={tech.name} logo={tech.logo} />
