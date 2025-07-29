@@ -64,7 +64,7 @@ export default function Hero() {
         </a>
         <a
           href="#projects"
-          className="px-6 py-3 bg-gray-800 rounded-lg hover:bg-gray-850 transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200"
+          className="px-6 py-3 bg-gray-300 rounded-lg hover:bg-gray-400 transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200"
         >
           View Projects
         </a>
